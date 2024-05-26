@@ -1,0 +1,51 @@
+Step 1: Update pubspec.yaml
+Purpose:
+
+To include the http package as a dependency in your project, which allows you to make HTTP requests.
+
+Actions:
+
+Open your pubspec.yaml file.
+Add the http package under the dependencies section.
+Save the file.
+Run flutter pub get to fetch the dependencies.
+
+Step 2: Create and Implement ai_generator.dart
+Purpose:
+
+To define a class that interacts with the OpenAI API to generate content based on a given prompt.
+
+Actions:
+Create a new Dart file named ai_generator.dart.
+Import necessary packages (dart:convert for JSON handling and http for making HTTP requests).
+Define the AIGenerator class with methods for generating content.
+
+Step 3: Use the AIGenerator in Your Application
+Purpose:
+To integrate the AIGenerator class into your Flutter app, enabling you to generate content using the OpenAI API.
+
+Actions:
+Import ai_generator.dart into your main file.
+Create an instance of AIGenerator.
+Call the generateContent method when needed (e.g., in response to a button press).
+
+Step 4: Handling API Keys Securely
+Purpose:
+To ensure that your API keys are not exposed publicly.
+
+Actions:
+Avoid hardcoding API keys directly in the code.
+Use environment variables or secure storage solutions.
+Summary
+Update pubspec.yaml:
+
+Add the http package.
+Run flutter pub get.
+Create ai_generator.dart:
+
+Define the AIGenerator class.
+Implement the generateContent method to call the OpenAI API.
+Integrate the AI Generator:
+
+Import and use the AIGenerator in your main application file.
+Call the generateContent method when needed.
